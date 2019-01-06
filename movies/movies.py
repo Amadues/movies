@@ -22,7 +22,8 @@ def result()-> 'html':
 	cursor.execute(sql)
 	a = cursor.fetchall()
 	for i in a:
-		result = i		
+		result = i
+		print(result)
 	return render_template('result.html',
 							the_result=result,
 							the_title=title,
